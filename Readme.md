@@ -15,12 +15,12 @@ Installation
 git clone https://github.com/bjhale/apachectlx.git
 cd apachectlx
 cp apachectlx /usr/local/bin/
+brew install lynx
 ```
 
 Usage
 -----
 Can be used just like apachectl.
-
 For new functionality:
 ```shell
 apachectlx status
