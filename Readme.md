@@ -30,3 +30,6 @@ apachectlx fullstatus
 FAQ
 ---
 
+###Can I install this with Homebrew.
+Not yet. Maybe in the future.
+    
