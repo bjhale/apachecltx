@@ -124,8 +124,12 @@ configtest)
     ERROR=$?
     ;;
 status)
-    echo Go to $STATUSURL in the web browser of your choice.
-    echo Note that mod_status must be enabled for this to work.
+    checklynx
+    set -o pipefail
+    $LYNX $STATUSURL | awk '/process$/ {print; exit } { print } '
+    if [[ $? != 0 ]]; then
+        ERROR=3
+    fi
     ;;
 fullstatus)
     checklynx
