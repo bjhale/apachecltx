@@ -85,6 +85,7 @@ run_launchctl() {
 checklynx() {
     if [ "$LYNX" = "none" ]; then
         echo "The 'lynx' package is required for this functionality."
+        echo "Run: brew install lynx."
         exit 8
     fi
 }
