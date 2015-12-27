@@ -126,7 +126,11 @@ configtest)
 status)
     echo Go to $STATUSURL in the web browser of your choice.
     echo Note that mod_status must be enabled for this to work.
-    ;;In
+    ;;
+fullstatus)
+    checklynx
+    $LYNX $STATUSURL
+    ;;
 *)
     $HTTPD "$@"
     ERROR=$?
