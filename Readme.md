@@ -6,8 +6,8 @@ This is a modified version of the apachectl script that comes with OSX re-implem
 Requirements
 ------------
 
-Homebrew
-Lynx
+ * Homebrew
+ * Lynx
 
 Installation
 ------------
